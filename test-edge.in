@@ -1,0 +1,17 @@
+# Test edge cases
+Create_stack 0 0
+Create_stack 1 0
+Add_student 1 test 20 0
+Add_student 2 overflow 21 0
+Print_stack 0
+Remove_student 0
+Remove_student 0
+Stack_is_empty 0
+# Test invalid stack ID
+Create_stack 2 3
+Add_student 1 invalid 20 3
+Print_stack 3
+# Test large values
+Create_stack 999999 1
+Add_student 999999999 longname 99 1
+Print_stack 1
